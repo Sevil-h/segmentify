@@ -4,3 +4,12 @@
   margin-top: 1rem;
   padding: 1rem 0;
 }
+
+@media only screen and (max-width: 768px) {
+  .products-container {
+    display: grid;
+    grid-template-columns: none;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+}

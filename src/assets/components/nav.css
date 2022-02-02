@@ -10,8 +10,6 @@
 .nav-item {
   position: relative;
   margin-bottom: 0.5rem;
-  display: grid;
-  grid-gap: 8px;
 }
 
 .nav-item span {
@@ -58,4 +56,30 @@
   background-color: rgba(208, 222, 237, 0.4);
   border-radius: 4px;
   color: #1627e2;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-item span {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    top: 65px;
+    transform: scaleY(1);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+      background-color 0.1s;
+  }
+  .nav-item:hover span {
+    transform: scaleY(1);
+    background-color: #1627e2;
+  }
+  .nav-item-link {
+    margin-left: 0;
+  }
 }

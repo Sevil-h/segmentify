@@ -22,8 +22,6 @@ html {
 .container {
   margin: 3rem;
   background-color: white;
-  display: flex;
-  flex-direction: column;
   border-radius: 8px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -32,7 +30,14 @@ html {
   font-size: 24px;
   font-weight: bold;
   color: #212121;
-  text-align: left;
   width: 100%;
-  margin: 1rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0;
+    border-radius: 0;
+  }
 }
