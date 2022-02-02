@@ -1,8 +1,10 @@
+@import "assets/index.css";
+
 /* Opinionated CSS defaults based on:
   ! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css 
 */
 
-html {
+/* html {
   line-height: 1.2; 
   -webkit-text-size-adjust: 100%; 
 }
@@ -115,4 +117,4 @@ progress {
 
 [hidden] {
   display: none;
-}
+} */

@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300;400&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #c6c6c6;
+  box-sizing: border-box;
+  font-family: "Roboto", "Open-sans";
+}
+html {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.container {
+  margin: 3rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
