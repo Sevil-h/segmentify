@@ -1,0 +1,48 @@
+.left-arrow {
+  position: absolute;
+  top: 15%;
+  left: -20px;
+  font-size: 1.5rem;
+  color: grey;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 10;
+  overflow: hidden;
+  border: 1px solid grey;
+  padding: 16px 20px;
+  text-align: center;
+  transition: all 0.4s;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 15%;
+  right: -20px;
+  font-size: 1.5rem;
+  color: grey;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 10;
+  overflow: hidden;
+  border: 1px solid grey;
+  padding: 16px 20px;
+  transition: all 0.4s;
+}
+.left-arrow:hover {
+  color: black;
+}
+
+.right-arrow:hover {
+  color: black;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slick-dots li {
+  display: none;
+}
