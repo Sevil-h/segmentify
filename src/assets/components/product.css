@@ -19,9 +19,8 @@
 }
 
 .product-img {
-  display: block;
   width: 100%;
-  max-height: 180px;
+  max-height: 160px;
   object-fit: cover;
   overflow: hidden;
   border-radius: 8px;
@@ -46,28 +45,29 @@
   border: 1px solid transparent;
   background: #dddddd;
   width: 100%;
-  padding: 1rem;
+  padding: 0.6rem;
   border-radius: 4px;
   text-align: center;
   font-size: 24px;
   font-family: inherit;
   font-weight: bold;
   color: #3f3f3f;
-  margin-top: 1rem;
+  margin-top: 0.6rem;
 }
 
 .product-delivery {
-  margin: 1rem;
+  margin: 0.6rem;
 }
 
 .del-icon {
   color: #03a303;
+  font-size: 12px;
 }
 
 .delivery-text {
   color: #999999;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 10px;
   font-weight: bold;
   letter-spacing: 0;
 }
@@ -76,7 +76,7 @@
   background-color: #1627e2;
   border: none;
   width: 100%;
-  padding: 1rem;
+  padding: 0.6rem;
   border-radius: 4px;
   text-align: center;
   font-size: 20px;
