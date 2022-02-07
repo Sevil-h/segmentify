@@ -1,0 +1,25 @@
+.pop-up {
+  position: absolute;
+  padding: 1rem 0.5rem;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  bottom: 1rem;
+  right: 1rem;
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 350px;
+}
+.close {
+  color: white;
+  cursor: pointer;
+}
+
+.close:hover {
+  opacity: 0.7;
+}
+
+.check {
+  color: green;
+}
