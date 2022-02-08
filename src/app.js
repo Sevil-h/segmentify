@@ -53,11 +53,14 @@ class UI {
         this.displayProducts(categ);
         // trigger category link
         const currentElement = e.target;
+        console.log(e.target.previousElementSibling);
         for (let i = 0; i < linkLength; i++) {
           if (links[i] === currentElement) {
             links[i].classList.add("nav-item-active");
+            links[i].previousElementSibling.classList.add("active");
           } else {
             links[i].classList.remove("nav-item-active");
+            links[i].previousElementSibling.classList.remove("active");
           }
         }
       });
@@ -67,8 +70,6 @@ class UI {
   displayProducts(products) {
     let productCart = [];
     let categories = recommendedProducts[products];
-    console.log(categories[0]);
-
     categories.map((product) => {
       const title = product.name;
       const imgUrl = product.image;

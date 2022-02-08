@@ -25,11 +25,6 @@
     background-color 0.1s;
 }
 
-.nav-item-active span {
-  transform: scaleY(1);
-  background-color: #1627e2;
-}
-
 .nav-item-link {
   text-decoration: none;
   display: block;
@@ -48,7 +43,10 @@
   border-radius: 4px;
   color: #1627e2;
 }
-
+.active {
+  transform: scaleY(1) !important;
+  background-color: #1627e2;
+}
 .nav-item:hover span {
   transform: scaleY(1);
   background-color: #1627e2;
