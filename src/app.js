@@ -7,6 +7,7 @@ const popup = document.querySelector(".pop-up");
 
 let userCategories = [];
 let recommendedProducts = [];
+let seconds = 0;
 
 // getting the products
 class Products {
@@ -43,10 +44,22 @@ class UI {
     ul.innerHTML = result;
     nav.appendChild(ul);
     const links = [...document.querySelectorAll(".nav-item-link")];
+    const linkLength = links.length;
+    console.log(linkLength);
     links.map((link) => {
       link.addEventListener("click", (e) => {
+        e.preventDefault();
         const categ = e.target.innerText;
         this.displayProducts(categ);
+        const currentElement = e.target;
+        // currentElement.classList.add("nav-item-active");
+        for (let i = 0; i < linkLength; i++) {
+          if (links[i] === currentElement) {
+            links[i].classList.add("nav-item-active");
+          } else {
+            links[i].classList.remove("nav-item-active");
+          }
+        }
       });
     });
   }
@@ -106,6 +119,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const ui = new UI();
   products.getProducts().then((products) => {
     ui.displayCategories(userCategories);
-    ui.displayProducts(products);
+    ui.displayProducts((products = "Size Özel"));
   });
 });
