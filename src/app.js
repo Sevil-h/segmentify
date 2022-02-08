@@ -1,6 +1,3 @@
-import Turbolinks from "turbolinks";
-Turbolinks.start();
-
 // variables
 const containerDOM = document.querySelector(".container");
 const container = document.querySelector(".products-container");
@@ -70,6 +67,8 @@ class UI {
   displayProducts(products) {
     let productCart = [];
     let categories = recommendedProducts[products];
+    console.log(categories[0]);
+
     categories.map((product) => {
       const title = product.name;
       const imgUrl = product.image;
@@ -78,6 +77,7 @@ class UI {
       productCart += `<div class="product">
       <div class="product-top">
         <img
+          loading="lazy"
           src=${imgUrl}
           alt="product img"
           class="product-img"
