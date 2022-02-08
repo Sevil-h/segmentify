@@ -75,7 +75,8 @@ class UI {
       const imgUrl = product.image;
       const price = product.priceText;
       const shippingFee = product.params.shippingFee;
-      productCart += `<div class="product">
+      productCart += `
+      <div class="product">
       <div class="product-top">
         <img
           loading="lazy"
