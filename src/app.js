@@ -1,3 +1,6 @@
+import Turbolinks from "turbolinks";
+Turbolinks.start();
+
 // variables
 const containerDOM = document.querySelector(".container");
 const container = document.querySelector(".products-container");
@@ -45,14 +48,14 @@ class UI {
     nav.appendChild(ul);
     const links = [...document.querySelectorAll(".nav-item-link")];
     const linkLength = links.length;
-    console.log(linkLength);
     links.map((link) => {
       link.addEventListener("click", (e) => {
         e.preventDefault();
         const categ = e.target.innerText;
+        // display products from choosen ctegory
         this.displayProducts(categ);
+        // trigger category link
         const currentElement = e.target;
-        // currentElement.classList.add("nav-item-active");
         for (let i = 0; i < linkLength; i++) {
           if (links[i] === currentElement) {
             links[i].classList.add("nav-item-active");
@@ -63,7 +66,7 @@ class UI {
       });
     });
   }
-  // display products from shoosen category
+  // display products from choosen category
   displayProducts(products) {
     let productCart = [];
     let categories = recommendedProducts[products];
@@ -97,6 +100,7 @@ class UI {
     });
     productsCont.innerHTML = productCart;
 
+    // show popup
     const btns = [...document.querySelectorAll(".product-button")];
     btns.map((btn) => {
       btn.addEventListener("click", (e) => {
@@ -105,6 +109,7 @@ class UI {
         popup.style.display = "flex";
       });
 
+      // close popup
       const close = document.querySelector(".close");
       close.addEventListener("click", (e) => {
         e.preventDefault();
