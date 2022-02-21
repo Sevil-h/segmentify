@@ -1,2 +1,0 @@
-# segmentify
-A JavaScript project
