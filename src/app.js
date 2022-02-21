@@ -53,7 +53,6 @@ class UI {
         this.displayProducts(categ);
         // trigger category link
         const currentElement = e.target;
-        console.log(e.target.previousElementSibling);
         for (let i = 0; i < linkLength; i++) {
           if (links[i] === currentElement) {
             links[i].classList.add("nav-item-active");
